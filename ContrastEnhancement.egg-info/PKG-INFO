@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: ContrastEnhancement
+Version: 0.0.1
+Summary: image contrast enhancement
+Home-page: xiezhongzhao.github.io
+Author: xiezhongzhao
+Author-email: xiezhongzhao@cug.edu.cn
+License: MIT
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: MicrosoftIntended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
