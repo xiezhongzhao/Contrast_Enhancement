@@ -155,8 +155,12 @@ class SECEDCT(object):
         '''
         histogram = dict()
 
-        K = np.unique(img_hsv[:, :, 2])  # the distinct gray levels K
+        # K = np.unique(img_hsv[:, :, 2])  # the distinct gray levels K
+        K = [i for i in range(256)]
         img = img_hsv[:, :, 2]
+
+        x, y = img.shape[0:2] # reduce the time by resizing the image
+        img = cv2.resize(img, (int(y / 2), int(x / 2)))
 
         H = self.img_size[0]
         W = self.img_size[1]
@@ -231,12 +235,19 @@ class SECEDCT(object):
         :param map:
         :return:
         '''
-        img = img_hsv[:, :, 2]
+        # img = img_hsv[:, :, 2]
+        # h = img.shape[0]; w = img.shape[1]
+        # V = np.array(img).flatten()
+        # V = map(lambda x: mapping[x], V)
+        # global_img = np.array(list(V)).reshape(h, w)
 
-        h = img.shape[0]; w = img.shape[1]
-        V = np.array(img).flatten()
-        V = map(lambda x: mapping[x], V)
-        global_img = np.array(list(V)).reshape(h, w)
+        img = img_hsv[:, :, 2]
+        lutData = []
+        for key, value in enumerate(mapping.items()):
+            lutData.append(value[1])
+        global_img = np.zeros_like(img)
+        table = np.array(lutData).clip(0,255).astype('uint8')
+        cv2.LUT(img, table, global_img)
 
         return global_img
 
@@ -392,6 +403,7 @@ def showIMG(IMG_DIR, IMG_NAME, newImg):
     if cv2.waitKey(1) & 0xFF == ord('q'):
         cv2.destroyAllWindows()
         exit()
+
 
 
 
