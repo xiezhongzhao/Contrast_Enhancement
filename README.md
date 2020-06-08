@@ -20,6 +20,11 @@ python test.py -name *.jpg -gamma 0.00
 
 4. QRCM: This measure considers both the level of relative contrast enhancement between input and output images and distortions resulting from the enhancement process. The measure produces a number in the range [−1, 1] where -1 and 1 refer to full level of contrast degradation and improvement, respectively.
 
+5. References  
+[1] Spatial Entropy-Based Global and Local Image Contrast Enhancement         
+[2] Spatial Mutual Information and PageRank-Based Contrast Enhancement and Quality-Aware Relative Contrast Measure    
+
+
 
 
 
