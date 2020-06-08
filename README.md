@@ -10,13 +10,15 @@ pip install ContrastEnhancement-0.0.1-py2.py3-none-any.whl
 python test.py -name *.jpg -gamma 0.00
 ```
 
-3. The original images are shown on the left, and the contrastment enhanced image on the right.    
+3. The original images are shown on the left, and the enhanced image on the right.    
 
 |      Raw Image           |        Enhanced Image   |
 | :-----------------: | :--------------: |
-| ![](data/1.jpg) | ![](results/raw_images/49_1400.png)|
+| ![](data/1.jpg) | ![](data/1_secedct.jpg)|
+| ![](data/4.jpg) | ![](data/4_secedct.jpg)|
+| ![](data/7.jpg) | ![](data/7_secedct.jpg)|
 
-
+4. QRCM: This measure considers both the level of relative contrast enhancement between input and output images and distortions resulting from the enhancement process. The measure produces a number in the range [−1, 1] where -1 and 1 refer to full level of contrast degradation and improvement, respectively.
 
 
 
