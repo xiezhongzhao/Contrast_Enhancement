@@ -14,7 +14,7 @@ python test.py -name *.jpg -gamma 0.00
 
 |      Raw Image           |        Enhanced Image   |
 | :-----------------: | :--------------: |
-| ![](results/raw_images/49_1200.png) | ![](results/raw_images/49_1400.png)|
+| ![](data/1.jpg) | ![](results/raw_images/49_1400.png)|
 
 
 
