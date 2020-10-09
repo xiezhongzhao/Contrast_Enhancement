@@ -9,7 +9,7 @@ pip install ContrastEnhancement-0.0.1-py2.py3-none-any.whl
 ```
 python test.py -name *.jpg -gamma 0.00
 ```
-The gamma parameter controls the local contrast enhancement, the gamma is in the range [0,1], the larger the gamma is, the more details the algorithm produces. 
+The local contrast enhancement can be controlled by the gamma parameter in the range [0,1], the larger the gamma is, the more details the algorithm produces. 
 
 3. The original images are shown on the left, and the enhanced image on the right.    
 
