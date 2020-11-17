@@ -5,7 +5,7 @@ pip install ContrastEnhancement-0.0.1-py2.py3-none-any.whl
 ```
 
 
-2. If you wanna test the algorithm, you can enter this command as follows:      
+2. If you wanna test the algorithm, you can put the images into data file and enter this command as follows:      
 ```
 python test.py -name *.jpg -gamma 0.00
 ```
