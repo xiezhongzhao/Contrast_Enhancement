@@ -1,4 +1,4 @@
-# ss_image_enhancement
+# image contrast enhancement
 1. Enter the dist directory, and then execute the command in the terminal.     
 ```
 pip install ContrastEnhancement-0.0.1-py2.py3-none-any.whl
